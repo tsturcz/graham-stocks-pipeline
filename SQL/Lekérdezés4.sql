@@ -1,0 +1,1 @@
+SELECT * FROM vw_banks_screen ORDER BY graham_score DESC LIMIT 10;

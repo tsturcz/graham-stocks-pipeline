@@ -1,0 +1,1 @@
+SELECT * FROM etl_log ORDER BY id DESC LIMIT 3;

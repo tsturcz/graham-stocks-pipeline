@@ -1,0 +1,107 @@
+# ====================================================================
+# Graham Stocks Pipeline - .gitignore
+# ====================================================================
+# What NOT to commit to GitHub. Keeps secrets, generated files, and
+# environment-specific stuff out of the public repo.
+# ====================================================================
+
+# --- Secrets and config (NEVER commit) ------------------------------
+.env
+*.env
+!.env.example
+
+# --- Python ---------------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Virtual environments
+venv/
+env/
+ENV/
+.venv/
+.virtualenv/
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+*.egg
+
+# --- Logs and runtime files -----------------------------------------
+*.log
+scheduler.log
+scraper.log
+
+# --- Power BI -------------------------------------------------------
+# .pbix files contain data — only commit if scrubbed of sensitive info
+# (we keep the local one, but consider removing in the public repo)
+# *.pbix          # uncomment to exclude entirely
+*.pbix.bak
+.PBIWorkspace/
+
+# --- IDE / editor ---------------------------------------------------
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# --- OS-specific ----------------------------------------------------
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+[Dd]esktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+
+# --- Project-specific -----------------------------------------------
+# Backup files
+*.bak
+*.tmp
+
+# Local SQL exports / dumps
+*.sql.gz
+backup/
+dumps/
+
+# Temporary CSV exports
+exports/
+*.csv.bak
+
+# --- Python installation files (Python was installed inside the project folder) ---
+DLLs/
+Doc/
+Lib/
+include/
+libs/
+python.exe
+pythonw.exe
+python3.dll
+python312.dll
+vcruntime140.dll
+vcruntime140_1.dll
+LICENSE.txt
+NEWS.txt
